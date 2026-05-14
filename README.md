@@ -8,8 +8,8 @@ A curated bundle of agent skills for GitHub Copilot, VS Code agent mode, and Cla
 
 ```bash
 # Install a skill from this repository with GitHub CLI
-# Replace sk-surya if you are using a fork on GitHub
-gh skill install sk-surya/skill-pack <skill-name>
+# Replace <owner> with sk-surya or your fork owner on GitHub
+gh skill install <owner>/skill-pack <skill-name>
 ```
 
 Manual install also works: copy any `skills/<skill-name>/` directory from this repository into either `.github/skills/<skill-name>/` for a single repository or `~/.copilot/skills/<skill-name>/` for personal use. The skill directories in this repo follow Copilot's `SKILL.md` naming, folder naming, and YAML frontmatter conventions so they can be copied as-is.
@@ -18,11 +18,11 @@ Manual install also works: copy any `skills/<skill-name>/` directory from this r
 
 ```bash
 # Install all skills
-# Replace sk-surya if you are using a fork on GitHub
-claude skills install --from github:sk-surya/skill-pack
+# Replace <owner> with sk-surya or your fork owner on GitHub
+claude skills install --from github:<owner>/skill-pack
 
 # Or install individual skills
-claude skills install --from github:sk-surya/skill-pack/skills/<skill-name>
+claude skills install --from github:<owner>/skill-pack/skills/<skill-name>
 ```
 
 ## Skills
